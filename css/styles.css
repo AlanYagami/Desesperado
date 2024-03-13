@@ -1,0 +1,60 @@
+.titulo {
+    text-transform: uppercase;
+    font-size: 5vw; /* Tamaño de fuente responsive */
+    font-family: 'Verdana';
+    animation: cambioColor 5s infinite; /* Animación de cambio de color */
+    text-align: center; /* Centrar el texto */
+  }
+  
+  @keyframes cambioColor {
+    0% {
+      color: red;
+    }
+    16.67% {
+      color: orange;
+    }
+    33.33% {
+      color: yellow;
+    }
+    50% {
+      color: green;
+    }
+    66.67% {
+      color: blue;
+    }
+    83.33% {
+      color: indigo;
+    }
+    100% {
+      color: violet;
+    }
+  }
+  
+  .tituloContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Espaciado entre el título y las tarjetas */
+  }
+  
+  @media (max-width: 768px) {
+    /* Media query para ajustar el tamaño del título en pantallas más pequeñas */
+    .titulo {
+      font-size: 8vw; /* Tamaño de fuente más grande para pantallas pequeñas */
+    }
+  }
+
+  .card{
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .w-100{
+    border-radius: 20px;
+    border: 0.5px solid rgb(208, 208, 208); /* Borde sólido de 2px de ancho y color negro */
+
+  }
+
+  .carousel-item{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    ;
+  }
